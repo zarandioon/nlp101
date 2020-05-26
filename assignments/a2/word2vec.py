@@ -5,7 +5,7 @@ import random
 
 from utils.gradcheck import gradcheck_naive, grad_tests_softmax, grad_tests_negsamp
 from utils.utils import normalizeRows, softmax
-
+ 
 
 def sigmoid(x):
     """
@@ -62,6 +62,8 @@ def naiveSoftmaxLossAndGradient(
     ### This numerically stable implementation helps you avoid issues pertaining
     ### to integer overflow. 
 
+    print("orig!! XXXXXXXXXXXXx")
+
     ### END YOUR CODE
 
     return loss, gradCenterVec, gradOutsideVecs
@@ -108,6 +110,7 @@ def negSamplingLossAndGradient(
     ### YOUR CODE HERE (~10 Lines)
 
     ### Please use your implementation of sigmoid in here.
+    print("orig!! YYYYYYYY")
 
     ### END YOUR CODE
 
